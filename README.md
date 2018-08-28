@@ -1,8 +1,8 @@
 #GrieferBOT
 
-Ein Einfaches Botprogramm um zun‰chst den automatisierten Verkauf von Item zu
-ermˆglichen. Die Funktionalit‰ten beschr‰nken sich im Moment auf den Verkauf
-von 9 Items, die sich in der Hotbar des ausgew‰hlten Bots befinden. 
+Ein Einfaches Botprogramm um zun√§chst den automatisierten Verkauf von Item zu
+erm√∂glichen. Die Funktionalit√§ten beschr√§nken sich im Moment auf den Verkauf
+von 9 Items, die sich in der Hotbar des ausgew√§hlten Bots befinden. 
 
 Eine genaue Bedienungsanleitung findet sich unter INSTRUCTIONS.txt,
 sowie eine Liste mit den Systemanforderungen unter REQUIREMENTS.txt
