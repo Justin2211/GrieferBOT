@@ -16,20 +16,42 @@
 ##    You should have received a copy of the GNU General Public License
 ##    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import time, os, re
+warranty = """    GrieferBOT  Copyright (C) 2018  LocutusV0nB0rg
+
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+    """
+
+import time, os, re, datetime
 from pynput.keyboard import Key, Controller, KeyCode
 import pynput._util.win32_vks as VK
 
 keyboard = Controller()
+mouse = Controller()
 
-SELLING = {1100:'beacon', 333:'Skull'}
-INVENTORY = {'beacon':21, 'Skull':0}
+Admins = ["AbsolutKeinBock", "PyroStuffArmy", "LocutusV0nB0rg"]
+SELLING = dict() #{1100:'beacon', 333:'Skull'}
+INVENTORY = dict() #{'beacon':[(21, '1'), (41, '3')], 'Skull':[(42, '2')]}
+SLOWCHAT = False
+once = True
+Ranksandsep = ["Spieler", "Ultra", "YouTuber", "Freund", "Freund+", "Premium", "Griefer", "Titan", "Legende", "Champ", "|"]
+SellingRooms = {"LeftRoom":"", "RightRoom":""}
+turned = "left"
+
+def output(out):
+    print(out)
+    out += '\n'
+    a = open('./logfile.txt', 'a+')
+    a.write(out)
+    a.close()    
 
 def push(key):
     keyboard.press(key)
     keyboard.release(key)
 
-def sayInChat(message):
+def quickSay(message):
+    output(message)
     keyboard.press('t')
     time.sleep(0.1)
     keyboard.release('t')
@@ -38,30 +60,53 @@ def sayInChat(message):
     keyboard.press(KeyCode.from_vk(VK.RETURN))
     time.sleep(0.1)
     keyboard.release(KeyCode.from_vk(VK.RETURN))
+
+def sayInChat(message):
+    global SLOWCHAT
+    output(message)
+    keyboard.press('t')
+    time.sleep(0.1)
+    keyboard.release('t')
+    keyboard.type(message)
+    time.sleep(0.2)
+    keyboard.press(KeyCode.from_vk(VK.RETURN))
+    time.sleep(0.1)
+    keyboard.release(KeyCode.from_vk(VK.RETURN))
+    if SLOWCHAT:
+        time.sleep(3.05)
+    else:
+        time.sleep(1.05)
     
 def payPlayerAmount(player, amount):
     sayInChat('/pay ' + player + ' ' + str(amount))
 
+def msg(player, message):
+    sayInChat("/msg " + player + " " + message)
+
 def dropItem(item):
-    if item == 'beacon':
-        push('1')
-        time.sleep(0.15)
-        push('q')
-    elif item == 'Skull':
-        push('2')
-        time.sleep(0.15)
-        push('q')
-    
     global INVENTORY
-    INVENTORY[item] -= 1
-    print('dropped', item)
+
+    for thing in INVENTORY:
+        if thing == item:
+            for ele in INVENTORY[item]:
+                if ele[0]>0:
+                    push(ele[1])
+                    time.sleep(0.15)
+                    push('q')
+                    ele[0] -= 1
+                    confirm = 'Dropped ' + item
+                    output(confirm)
+                    return
 
 def isReceivedItemAvailable(ItemName):
     global INVENTORY
-    if INVENTORY[ItemName]>0:
-        return True
-    else:
+    if ItemName not in INVENTORY:
         return False
+
+    for ele in INVENTORY[ItemName]:
+        if ele[0] > 0:
+            return True
+    return False
 
 def getItemByPrice(amount):
     for key in SELLING:
@@ -78,26 +123,111 @@ def follow(thefile):
             continue
         yield line
 
+def getInv():
+    global INVENTORY, SELLING
+    i=0
+    while i<10:
+        i+=1
+        strin = 'Name des Items auf Slot ' + str(i) + ': '
+        item = input(strin)
+
+        if item == '':
+            return False
+
+        number = int(input('Wieviele Items sollen verkauft werden: '))
+        preis = int(input('Wieviel soll ein Item kosten: '))
+
+        if item not in INVENTORY:
+            INVENTORY[item] = [[number, str(i)]]
+        else:
+            INVENTORY[item].append([number, str(i)])
+
+        SELLING[preis] = item
+        
+def getAfkMessage():
+    print("Welche Nachricht soll dem Kunden angezeigt werden, wenn er eine Nachricht an den Bot schreibt?")
+    Message = input("(Leer lassen, wenn keine Nachricht angezeigt werden soll) :")
+    return Message
+
+def toggleSlowchat():
+    global SLOWCHAT
+    SLOWCHAT =  not SLOWCHAT
+    print(SLOWCHAT)
+
+def turnLeft():
+    global mouse
+    if turned != "left":
+        mouse.move(-1000, 0)
+    turned = "left"
+    
+def turnRight():
+    global mouse
+    if turned != "right":
+        mouse.move(1000, 0)
+    turned = "right"
+
 if __name__ == '__main__':
+    print(warranty)
+
+    afk = getAfkMessage()
+    output(afk)
+
+    getInv()
+    
     logfile = open(os.getenv("APPDATA")+"/.minecraft/logs/latest.log", "r")
     loglines = follow(logfile)
-
+    time.sleep(5)
     for line in loglines:
         if "[Client thread/INFO]: [CHAT]" in line:
+
+            if once:
+                quickSay("Initialisiere GrieferBOT | Bitte warten...")
+                quickSay("Das sieht niemand... wenn doch, /msg LocutusV0nB0rg") 
+
+                output('[+] Bestand zu Beginn des Durchlaufes')
+                output(str(INVENTORY))
+                output(str(SELLING))
+                output('[+] Bereit für Kunden.')
+
+                once = False
+            
             message = line[40:]
             liste = message.split(' ')
             liste.append('-')
             liste.append('-')
             liste.append('-')
+            ########
+            if liste[0] == "Du":
+                SLOWCHAT = True
+                print(SLOWCHAT)
+            ########
+            if liste[0] == "Please" and liste[1] == "wait":
+                SLOWCHAT = False
+                print(SLOWCHAT)
+            ########
+            if liste[0] == "Der" and (liste[7] == "verlangsamt" or liste[7]=="auf") :
+                print(liste)
+                toggleSlowchat()
+            ########  
+            if afk != "":
+                if liste[0][0] == "[" and liste[3] == "->":
+                    if "Teammitglieder" not in message and "Ränge" not in message:
+                        output(message)
+                        name = liste[2]
+                        print(name)
+                        msg(name, afk)
+                    else:
+                        sayInChat(liste[2] + " ist sehr warscheinlich ein Bot.")
+                        time.sleep(1)
+                        sayInChat(",")
+                        time.sleep(1)
+            #######
             if liste[3] == 'hat':
                 name = liste[2]
-                
-                strings = 'Spieler: ' + name + ' | Betrag: ' + liste[5] + '\n'
-                print(strings)
 
-                a = open('./logfile.txt', 'a+')
-                a.write(strings)
-                a.close()
+                now = datetime.datetime.now()
+                strings = '[o] [' + now.strftime("%Y-%m-%d %H:%M") + '] Spieler: ' + name + ' | Betrag: ' + liste[5]
+                output(strings)
 
                 pre = liste[5][1:]
 
@@ -111,16 +241,47 @@ if __name__ == '__main__':
 
                 if not item:
                    payPlayerAmount(name, diff)
-                   sayInChat('/msg ' + name + ' Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!')
+                   msg(name, 'Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!')
                 else: 
                     if isReceivedItemAvailable(item):
-                        dropItem(item)
-                        sayInChat('/msg ' + name + ' Danke für ihren Einkauf!')
+                        if SellingRooms["LeftChamber"] == name:
+                            turnLeft()
+                            dropItem(item)
+                            msg(name, 'Danke für ihren Einkauf!')
+                        elif SellingRooms["RightChamber"] == name:
+                            turnRight()
+                            dropItem(item)
+                            msg(name, 'Danke für ihren Einkauf!')
+                        else:
+                            payPlayerAmount(name, diff)
+                            msg(name, 'Bitte begebe dich zuerst in eine der Kaufkammern.')
                     else:
                         payPlayerAmount(name, diff)
-                        sayInChat('/msg '+ name + ' Dieses Item ist leider ausverkauft. Hier hast du dein Money wieder!')
+                        msg(name, 'Dieses Item ist leider ausverkauft. Hier hast du dein Money wieder!')
+            #######
+            now = datetime.datetime.now()
+            if int(now.strftime("%S"))%5==0 and liste[0][1:7] != "???????" :
+                quickSay("/near")
+                        
+            if liste[1] == "in" and liste[3] == "Nähe:":
+                data = liste [4:]
+                for ele in data:
+                    if ele not in Ranksandsep and len(ele)>6:
+                        try:
+                            int(ele[-5])
+                        except:
+                            name = ele[:-5]
+                            distance = int(ele[-4])
+                            print(name, distance)
+                            if distance <= 3:
+                                sayInChat("/p kick " + name)
+                            if distance == 4:
+                                SellingRooms["RightRoom"] = name
+                            if distance == 5:
+                                SellingRooms["LeftRoom"] = name
+                            
+                
 
-                
-                
+            
         
         

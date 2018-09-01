@@ -93,3 +93,134 @@ Spieler: UNK_Max | Betrag: $1,100
 Spieler: ChaosFabi8 | Betrag: $333
 Spieler: Tryhard_Melone | Betrag: $333
 Spieler: ChaosFabi8 | Betrag: $333
+[+] Bestand zu Beginn des Durchlaufes
+{'beacon': [[15, '1']]}
+{1100: 'beacon'}
+[+] Bereit für Kunden.
+[o] [2018-08-28 09:37] Spieler: Effiti | Betrag: $1,100
+Dropped beacon
+/msg Effiti Danke für ihren Einkauf!
+
+[+] Bestand zu Beginn des Durchlaufes
+{'Witherskull': [[16, '1']], 'fledermausei': [[1, '2']]}
+{333: 'Witherskull', 25000: 'fledermausei'}
+[+] Bereit für Kunden.
+[o] [2018-08-29 22:35] Spieler: VykashiSpawner | Betrag: $33
+/pay VykashiSpawner 33.0
+
+/msg VykashiSpawner Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!
+
+[o] [2018-08-29 22:35] Spieler: VykashiSpawner | Betrag: $333
+Dropped Witherskull
+/msg VykashiSpawner Danke für ihren Einkauf!
+
+[o] [2018-08-29 22:37] Spieler: Blueline78 | Betrag: $333
+Dropped Witherskull
+/msg Blueline78 Danke für ihren Einkauf!
+
+[+] Bestand zu Beginn des Durchlaufes
+{'Eisenblock': [[20, '1']], 'smaragtblock': [[20, '2']], 'diamantblock': [[10, '3']], 'fledermausei': [[1, '4']], 'beacon': [[1, '5']], 'witherskull': [[21, '6']]}
+{50: 'Eisenblock', 70: 'smaragtblock', 60: 'diamantblock', 25000: 'fledermausei', 1100: 'beacon', 333: 'witherskull'}
+[+] Bereit für Kunden.
+[+] Bestand zu Beginn des Durchlaufes
+{'eisenblock': [[20, '1']], 'smaragstblock': [[20, '2']], 'diablock': [[10, '3']], 'fledermausei': [[1, '4']], 'beacon': [[1, '5']], 'witherskull': [[20, '6']]}
+{50: 'eisenblock', 70: 'smaragstblock', 60: 'diablock', 25000: 'fledermausei', 1100: 'beacon', 333: 'witherskull'}
+[+] Bereit für Kunden.
+[o] [2018-08-30 09:23] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:23] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+Dropped diablock
+/msg honeybread2 Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:24] Spieler: honeybread2 | Betrag: $60
+/pay honeybread2 60.0
+
+/msg honeybread2 Dieses Item ist leider ausverkauft. Hier hast du dein Money wieder!
+
+[o] [2018-08-30 09:44] Spieler: LittleBepo | Betrag: $60
+/pay LittleBepo 60.0
+
+/msg LittleBepo Dieses Item ist leider ausverkauft. Hier hast du dein Money wieder!
+
+[o] [2018-08-30 09:44] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:45] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
+[o] [2018-08-30 09:46] Spieler: LittleBepo | Betrag: $50
+Dropped eisenblock
+/msg LittleBepo Danke für ihren Einkauf!
+
