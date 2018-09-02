@@ -1,5 +1,9 @@
 #Minecraft-Sprache: Deutsch
 
+#Kompilierbefehl:
+
+#C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\Scripts
+
 ##    GrieferBOT - Ein einfacher Verkaufsbot für Griefergames.net
 ##    Copyright (C) 2018  LocutusV0nB0rg
 ##

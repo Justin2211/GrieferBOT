@@ -33,12 +33,13 @@ SELLING = dict() #{1100:'beacon', 333:'Skull'}
 INVENTORY = dict() #{'beacon':[(21, '1'), (41, '3')], 'Skull':[(42, '2')]}
 SLOWCHAT = False
 once = True
+dropKey = 'q'
 
 def output(out):
     print(out)
-    out += '\n'
+    print()
     a = open('./logfile.txt', 'a+')
-    a.write(out)
+    a.write(str(out))
     a.close()    
 
 def push(key):
@@ -80,7 +81,7 @@ def msg(player, message):
     sayInChat("/msg " + player + " " + message)
 
 def dropItem(item):
-    global INVENTORY
+    global INVENTORY, dropKey
 
     for thing in INVENTORY:
         if thing == item:
@@ -88,7 +89,7 @@ def dropItem(item):
                 if ele[0]>0:
                     push(ele[1])
                     time.sleep(0.15)
-                    push('q')
+                    push(dropKey)
                     ele[0] -= 1
                     confirm = 'Dropped ' + item
                     output(confirm)
@@ -145,6 +146,12 @@ def getAfkMessage():
     Message = input("(Leer lassen, wenn keine Nachricht angezeigt werden soll) :")
     return Message
 
+def getDropKey():
+    drop = input("Welche Taste wird als Drop-Taste benutzt: ")
+    if drop == "LeftShift":
+        return Key.shift_l
+    return drop
+
 def toggleSlowchat():
     global SLOWCHAT
     SLOWCHAT =  not SLOWCHAT
@@ -155,6 +162,10 @@ if __name__ == '__main__':
 
     afk = getAfkMessage()
     output(afk)
+
+    drop = getDropKey()
+    dropKey = drop
+    output(drop)
 
     getInv()
     

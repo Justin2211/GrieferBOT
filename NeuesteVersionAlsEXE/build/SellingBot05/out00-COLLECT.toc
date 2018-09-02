@@ -1,8 +1,8 @@
-([('SellingBot04.exe',
-   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot04\\SellingBot04.exe',
+([('SellingBot05.exe',
+   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot05\\SellingBot05.exe',
    'EXECUTABLE'),
-  ('SellingBot04.exe.manifest',
-   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot04\\SellingBot04.exe.manifest',
+  ('SellingBot05.exe.manifest',
+   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot05\\SellingBot05.exe.manifest',
    'BINARY'),
   ('python36.dll',
    'c:\\program files (x86)\\microsoft visual '
@@ -28,6 +28,10 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\DLLs\\_hashlib.pyd',
    'EXTENSION'),
+  ('select',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\select.pyd',
+   'EXTENSION'),
   ('_bz2',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\DLLs\\_bz2.pyd',
@@ -40,14 +44,10 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\DLLs\\_socket.pyd',
    'EXTENSION'),
-  ('select',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\DLLs\\select.pyd',
-   'EXTENSION'),
   ('_ctypes',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\DLLs\\_ctypes.pyd',
    'EXTENSION'),
   ('base_library.zip',
-   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot04\\base_library.zip',
+   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot05\\base_library.zip',
    'DATA')],)

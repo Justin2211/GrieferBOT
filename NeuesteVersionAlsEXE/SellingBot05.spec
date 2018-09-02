@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['SellingBot04.py'],
+a = Analysis(['SellingBot05.py'],
              pathex=['C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE'],
              binaries=[],
              datas=[],
@@ -19,7 +19,7 @@ pyz = PYZ(a.pure, a.zipped_data,
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='SellingBot04',
+          name='SellingBot05',
           debug=False,
           strip=False,
           upx=True,
@@ -30,4 +30,4 @@ coll = COLLECT(exe,
                a.datas,
                strip=False,
                upx=True,
-               name='SellingBot04')
+               name='SellingBot05')
