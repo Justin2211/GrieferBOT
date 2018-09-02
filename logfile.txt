@@ -1045,3 +1045,47 @@ Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
 [Premium | Eulehund99 -> mir] hey
 
 /msg Eulehund99 afk
+Ich bin nicht afk :PP
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'steak': [[10, '1']]}
+{5: 'steak'}
+[+] Bereit für Kunden.
+/near
+/near
+/p kick Linus_2000
+/p kick Linus_2000
+/near
+/near
+/near
+/near
+[o] [2018-09-01 19:02] Spieler: Linus_2000 | Betrag: $1
+/pay Linus_2000 1.0
+/msg Linus_2000 Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!
+/near
+[o] [2018-09-01 19:02] Spieler: Linus_2000 | Betrag: $11
+/pay Linus_2000 11.0
+/msg Linus_2000 Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!
+[o] [2018-09-01 19:02] Spieler: InsiderBoy | Betrag: $5
+Bin am testen nicht stören pls
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'Steak': [[10, '1']]}
+{5: 'Steak'}
+[+] Bereit für Kunden.
+/near
+/near
+[o] [2018-09-01 19:06] Spieler: InsiderBoy | Betrag: $5
+afk, programmieren, nicht stören
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'Steak': [[10, '1']]}
+{5: 'Steak'}
+[+] Bereit für Kunden.
+/near
+/near
+/near
+[o] [2018-09-01 19:08] Spieler: InsiderBoy | Betrag: $5

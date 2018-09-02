@@ -224,3 +224,32 @@ Dropped eisenblock
 Dropped eisenblock
 /msg LittleBepo Danke für ihren Einkauf!
 
+afk
++
+Initialisiere GrieferBOT | Bitte warten...
+
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+
+[+] Bestand zu Beginn des Durchlaufes
+{'fisch': [[1, '1']]}
+{10: 'fisch'}
+[+] Bereit für Kunden.
+[o] [2018-09-02 19:31] Spieler: saupi_Hd | Betrag: $10
+Dropped fisch
+/msg saupi_Hd Danke für ihren Einkauf!
+nne
++
+Initialisiere GrieferBOT | Bitte warten...
+
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+
+[+] Bestand zu Beginn des Durchlaufes
+{'fisch': [[2, '1']]}
+{10: 'fisch'}
+[+] Bereit für Kunden.
+[o] [2018-09-02 19:32] Spieler: saupi_Hd | Betrag: $10
+Dropped fisch
+/msg saupi_Hd Danke für ihren Einkauf!
+afk
+failtestKey.shiftInitialisiere GrieferBOT | Bitte warten...Das sieht niemand... wenn doch, /msg LocutusV0nB0rg[+] Bestand zu Beginn des Durchlaufes{'fisch': [[1, '1']]}{10: 'fisch'}[+] Bereit für Kunden.[o] [2018-09-02 19:34] Spieler: saupi_Hd | Betrag: $10Dropped fisch/msg saupi_Hd Danke für ihren Einkauf![o] [2018-09-02 19:34] Spieler: StylischerVincii | Betrag: $1/pay StylischerVincii 1.0/msg StylischerVincii Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben![o] [2018-09-02 19:34] Spieler: StylischerVincii | Betrag: $1/pay StylischerVincii 1.0/msg StylischerVincii Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben![o] [2018-09-02 19:34] Spieler: StylischerVincii | Betrag: $1/pay StylischerVincii 1.0/msg StylischerVincii Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben![o] [2018-09-02 19:35] Spieler: StylischerVincii | Betrag: $1/pay StylischerVincii 1.0/msg StylischerVincii Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben![o] [2018-09-02 19:35] Spieler: StylischerVincii | Betrag: $1/pay StylischerVincii 1.0/msg StylischerVincii Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben![Griefer | StylischerVincii -> mir] hey
+/msg StylischerVincii test[o] [2018-09-02 19:35] Spieler: StylischerVincii | Betrag: $1/pay StylischerVincii 1.0/msg StylischerVincii Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!
