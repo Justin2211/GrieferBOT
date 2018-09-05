@@ -28,17 +28,11 @@ from pynput.keyboard import Key, Controller, KeyCode
 import pynput._util.win32_vks as VK
 
 keyboard = Controller()
-mouse = Controller()
 
-Admins = ["AbsolutKeinBock", "PyroStuffArmy", "LocutusV0nB0rg"]
 SELLING = dict() #{1100:'beacon', 333:'Skull'}
 INVENTORY = dict() #{'beacon':[(21, '1'), (41, '3')], 'Skull':[(42, '2')]}
 SLOWCHAT = False
 once = True
-Ranksandsep = ["Spieler", "Ultra", "YouTuber", "Freund", "Freund+", "Premium", "Griefer", "Titan", "Legende", "Champ", "|"]
-SellingRooms = {"LeftRoom":"", "RightRoom":""}
-turned = "left"
-dropKey = None
 
 def output(out):
     print(out)
@@ -53,6 +47,7 @@ def push(key):
 
 def quickSay(message):
     output(message)
+    output('')
     keyboard.press('t')
     time.sleep(0.1)
     keyboard.release('t')
@@ -85,7 +80,7 @@ def msg(player, message):
     sayInChat("/msg " + player + " " + message)
 
 def dropItem(item):
-    global INVENTORY, dropKey
+    global INVENTORY
 
     for thing in INVENTORY:
         if thing == item:
@@ -93,7 +88,7 @@ def dropItem(item):
                 if ele[0]>0:
                     push(ele[1])
                     time.sleep(0.15)
-                    push(dropKey)
+                    push('q')
                     ele[0] -= 1
                     confirm = 'Dropped ' + item
                     output(confirm)
@@ -155,30 +150,6 @@ def toggleSlowchat():
     SLOWCHAT =  not SLOWCHAT
     print(SLOWCHAT)
 
-def turnLeft():
-    global mouse, turned
-    if turned != "left":
-        mouse.move(-1000, 0)
-    turned = "left"
-    
-def turnRight():
-    global mouse, turned
-    if turned != "right":
-        mouse.move(1000, 0)
-    turned = "right"
-
-def getDropKey():
-    global dropKey
-    opfile = open(os.getenv("APPDATA")+"/.minecraft/options.txt", "r")
-    for line in opfile:
-        if "key_key.drop" in line:
-            liste = line.split('.')
-            print(liste)
-            dropKey = liste[-1]
-            print(dropKey)
-
-def p
-
 if __name__ == '__main__':
     print(warranty)
 
@@ -186,7 +157,6 @@ if __name__ == '__main__':
     output(afk)
 
     getInv()
-    getDropKey()
     
     logfile = open(os.getenv("APPDATA")+"/.minecraft/logs/latest.log", "r")
     loglines = follow(logfile)
@@ -210,19 +180,19 @@ if __name__ == '__main__':
             liste.append('-')
             liste.append('-')
             liste.append('-')
-            ########
+
             if liste[0] == "Du":
                 SLOWCHAT = True
                 print(SLOWCHAT)
-            ########
+
             if liste[0] == "Please" and liste[1] == "wait":
                 SLOWCHAT = False
                 print(SLOWCHAT)
-            ########
-            if liste[0] == "Der" and (liste[7] == "verlangsamt" or liste[7]=="auf") :
+
+            if liste[0] == "Der":
                 print(liste)
                 toggleSlowchat()
-            ########  
+                
             if afk != "":
                 if liste[0][0] == "[" and liste[3] == "->":
                     if "Teammitglieder" not in message and "Ränge" not in message:
@@ -235,7 +205,7 @@ if __name__ == '__main__':
                         time.sleep(1)
                         sayInChat(",")
                         time.sleep(1)
-            #######
+            
             if liste[3] == 'hat':
                 name = liste[2]
 
@@ -258,42 +228,12 @@ if __name__ == '__main__':
                    msg(name, 'Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!')
                 else: 
                     if isReceivedItemAvailable(item):
-                        if SellingRooms["LeftRoom"] == name:
-                            #turnLeft()
-                            dropItem(item)
-                            msg(name, 'Danke für ihren Einkauf!')
-                        elif SellingRooms["RightRoom"] == name:
-                            #turnRight()
-                            dropItem(item)
-                            msg(name, 'Danke für ihren Einkauf!')
-                        else:
-                            payPlayerAmount(name, diff)
-                            msg(name, 'Bitte begebe dich zuerst in eine der Kaufkammern.')
+                        dropItem(item)
+                        msg(name, 'Danke für ihren Einkauf!')
                     else:
                         payPlayerAmount(name, diff)
                         msg(name, 'Dieses Item ist leider ausverkauft. Hier hast du dein Money wieder!')
-            #######
-            now = datetime.datetime.now()
-            if int(now.strftime("%S"))%5==0 and liste[0][1:7] != "???????" :
-                quickSay("/near")
-                        
-            if liste[1] == "in" and liste[3] == "Nähe:":
-                data = liste [4:]
-                for ele in data:
-                    if ele not in Ranksandsep and len(ele)>6:
-                        try:
-                            int(ele[-5])
-                        except:
-                            name = ele[:-5]
-                            distance = int(ele[-4])
-                            print(name, distance)
-                            if distance <= 3:
-                                sayInChat("/p kick " + name)
-                            if distance == 4:
-                                SellingRooms["RightRoom"] = name
-                            if distance == 5:
-                                SellingRooms["LeftRoom"] = name
-                            
+
                 
 
             

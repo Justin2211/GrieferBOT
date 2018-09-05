@@ -1,4 +1,4 @@
-#Instructions.txt
+﻿#Instructions.txt
 #GrieferBOT05
 
 Instructions gelten jeweils nur für das angegebene Release!
@@ -18,7 +18,9 @@ Desktop. Nun könnt ihr ihn auch schon Starten.
 Wenn ihr den Bot starten wollt, so habe ich seit Version GrieferBOT04 eine
 einfache Möglichkeit hinzugefügt. Im Ordner /NeuesteVersionAlsExe/dist/ gibt
 es eine Ausführbare Datei, die GrieferBOTXX heißt, wobei XX die aktuelle Ver-
-sion ist. Einfach die Datei öffnen, als ob ihr eine andere Anwendung starten
+sion ist. Wenn ihr eine Sichere Version haben wollt, so geht in den Ordner
+/LastStableRelease/dist/ und führt dor Die Datei aus.
+Einfach die Datei öffnen, als ob ihr eine andere Anwendung starten
 würdet, also Doppelklick. Nun öffnet sich ein Eingabefenster indem nun zuerst
 ein Copyright und ein Verweis auf die Lizenz zu sehen sind. Anschließend beginnt 
 das eigentliche Bot-Programm.

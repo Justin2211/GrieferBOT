@@ -1089,3 +1089,135 @@ Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
 /near
 /near
 [o] [2018-09-01 19:08] Spieler: InsiderBoy | Betrag: $5
+Test
+test
+afk, am testen , nicht stören bitte
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[2, '1']]}
+{5: 'stein'}
+[+] Bereit für Kunden.
+/near
+[o] [2018-09-03 17:37] Spieler: LocutusV0nB0rg | Betrag: $5
+/pay LocutusV0nB0rg 5.0
+/msg LocutusV0nB0rg Bitte begebe dich zuerst in eine der Kaufkammern.
+/near
+[o] [2018-09-03 17:37] Spieler: LocutusV0nB0rg | Betrag: $5
+/pay LocutusV0nB0rg 5.0
+Afk, am testen :P
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[23, '1']]}
+{5: 'stein'}
+[+] Bereit für Kunden.
+/near
+/near
+/near
+/near
+/near
+[o] [2018-09-03 17:42] Spieler: Albino_Schlumpf | Betrag: $5
+afk am testen
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[23, '1']]}
+{5: 'stein'}
+[+] Bereit für Kunden.
+/near
+/near
+/near
+/near
+/near
+/near
+[o] [2018-09-03 17:43] Spieler: Albino_Schlumpf | Betrag: $5
+afk am testen
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[23, '1']]}
+{5: 'stein'}
+[+] Bereit für Kunden.
+/near
+/near
+/near
+/near
+[o] [2018-09-03 17:44] Spieler: Albino_Schlumpf | Betrag: $5
+testnachricht
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[23, '1']]}
+{5: 'stein'}
+[+] Bereit für Kunden.
+/near
+/near
+/near
+/near
+[Spieler | Albino_Schlumpf -> mir] test
+
+/msg Albino_Schlumpf testnachricht
+/near
+[Spieler | Albino_Schlumpf -> mir] test
+
+/msg Albino_Schlumpf testnachricht
+[Spieler | Albino_Schlumpf -> mir] test
+
+/msg Albino_Schlumpf testnachricht
+/near
+[Spieler | Albino_Schlumpf -> mir] klappt
+
+/msg Albino_Schlumpf testnachricht
+[o] [2018-09-03 17:46] Spieler: Albino_Schlumpf | Betrag: $5
+afk
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[23, '1']]}
+{5: 'stein'}
+[+] Bereit für Kunden.
+/near
+/near
+/near
+/near
+/near
+/near
+/near
+/near
+[o] [2018-09-03 17:47] Spieler: Albino_Schlumpf | Betrag: $5
+test
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[23, '1']]}
+{5: 'stein'}
+[+] Bereit für Kunden.
+[o] [2018-09-03 17:48] Spieler: Albino_Schlumpf | Betrag: $5
+/pay Albino_Schlumpf 5.0
+/msg Albino_Schlumpf Bitte begebe dich zuerst in eine der Kaufkammern.
+/near
+/near
+/near
+/near
+[o] [2018-09-03 17:48] Spieler: Albino_Schlumpf | Betrag: $5
+afkk
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[23, '1']]}
+{5: 'stein'}
+[+] Bereit für Kunden.
+/near
+/near
+[o] [2018-09-03 17:49] Spieler: Albino_Schlumpf | Betrag: $5
+/pay Albino_Schlumpf 5.0
+/msg Albino_Schlumpf Bitte begebe dich zuerst in eine der Kaufkammern.
+[o] [2018-09-03 17:50] Spieler: Albino_Schlumpf | Betrag: $5
+/pay Albino_Schlumpf 5.0
+/msg Albino_Schlumpf Bitte begebe dich zuerst in eine der Kaufkammern.
+/near
+/p kick Albino_Schlumpf
+[o] [2018-09-03 17:50] Spieler: Albino_Schlumpf | Betrag: $5
+/pay Albino_Schlumpf 5.0
+/msg Albino_Schlumpf Bitte begebe dich zuerst in eine der Kaufkammern.
