@@ -10,3 +10,8 @@ Minecraft 1.8
 
 Hohe Wahrscheinlichkeit dass dieses Programm auch auf neueren (!) Versionen funktioniert, aber hier
 wieder keine Garantie.
+
+Notwendig zum Last Stable Release:
+
+Drop-Taste ist q
+Chat wird mit t geöffnet
