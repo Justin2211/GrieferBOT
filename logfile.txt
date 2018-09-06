@@ -1221,3 +1221,11 @@ Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
 [o] [2018-09-03 17:50] Spieler: Albino_Schlumpf | Betrag: $5
 /pay Albino_Schlumpf 5.0
 /msg Albino_Schlumpf Bitte begebe dich zuerst in eine der Kaufkammern.
+test
+Initialisiere GrieferBOT | Bitte warten...
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+[+] Bestand zu Beginn des Durchlaufes
+{'stone': [[64, '1']]}
+{1: 'stone'}
+[+] Bereit für Kunden.
+[o] [2018-09-05 11:51] Spieler: LocutusV0nB0rg | Betrag: $1

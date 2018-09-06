@@ -1,7 +1,12 @@
-#Requirements
+﻿#Requirements
 
 Entwickelt auf:
 Windows 10, x64 bit Edition
 
 Das ist die einzige Version die momentan unterstützt wird. Kann auch auf anderen x64 funktionieren, in
 diesem Fall hab ich aber keine Garantie, dass der Bot ordentlich funktioniert
+
+Minecraft 1.8
+
+Hohe Wahrscheinlichkeit dass dieses Programm auch auf neueren (!) Versionen funktioniert, aber hier
+wieder keine Garantie.

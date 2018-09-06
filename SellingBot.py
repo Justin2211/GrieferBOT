@@ -171,14 +171,13 @@ def getDropKey():
     global dropKey
     opfile = open(os.getenv("APPDATA")+"/.minecraft/options.txt", "r")
     for line in opfile:
+        print(liste)
         if "key_key.drop" in line:
             liste = line.split('.')
             print(liste)
             dropKey = liste[-1]
             print(dropKey)
-
-def p
-
+            
 if __name__ == '__main__':
     print(warranty)
 
@@ -258,17 +257,17 @@ if __name__ == '__main__':
                    msg(name, 'Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!')
                 else: 
                     if isReceivedItemAvailable(item):
-                        if SellingRooms["LeftRoom"] == name:
-                            #turnLeft()
+##                        if SellingRooms["LeftRoom"] == name:
+##                            #turnLeft()
+##                            dropItem(item)
+##                            msg(name, 'Danke für ihren Einkauf!')
+##                        elif SellingRooms["RightRoom"] == name:
+##                            #turnRight()
                             dropItem(item)
                             msg(name, 'Danke für ihren Einkauf!')
-                        elif SellingRooms["RightRoom"] == name:
-                            #turnRight()
-                            dropItem(item)
-                            msg(name, 'Danke für ihren Einkauf!')
-                        else:
-                            payPlayerAmount(name, diff)
-                            msg(name, 'Bitte begebe dich zuerst in eine der Kaufkammern.')
+##                        else:
+##                            payPlayerAmount(name, diff)
+##                            msg(name, 'Bitte begebe dich zuerst in eine der Kaufkammern.')
                     else:
                         payPlayerAmount(name, diff)
                         msg(name, 'Dieses Item ist leider ausverkauft. Hier hast du dein Money wieder!')
@@ -277,23 +276,22 @@ if __name__ == '__main__':
             if int(now.strftime("%S"))%5==0 and liste[0][1:7] != "???????" :
                 quickSay("/near")
                         
-            if liste[1] == "in" and liste[3] == "Nähe:":
-                data = liste [4:]
-                for ele in data:
-                    if ele not in Ranksandsep and len(ele)>6:
-                        try:
-                            int(ele[-5])
-                        except:
-                            name = ele[:-5]
-                            distance = int(ele[-4])
-                            print(name, distance)
-                            if distance <= 3:
-                                sayInChat("/p kick " + name)
-                            if distance == 4:
-                                SellingRooms["RightRoom"] = name
-                            if distance == 5:
-                                SellingRooms["LeftRoom"] = name
-                            
+##            if liste[1] == "in" and liste[3] == "Nähe:":
+##                data = liste [4:]
+##                for ele in data:
+##                    if ele not in Ranksandsep and len(ele)>6:
+##                        try:
+##                            int(ele[-5])
+##                        except:
+##                            name = ele[:-5]
+##                            distance = int(ele[-4])
+##                            print(name, distance)
+##                            if distance <= 3:
+##                                sayInChat("/p kick " + name)
+##                            if distance == 4:
+##                                SellingRooms["RightRoom"] = name
+##                            if distance == 5:
+##                                SellingRooms["LeftRoom"] = name                            
                 
 
             
