@@ -11,39 +11,51 @@ DISCLAIMER: Man kann den Bot nicht auf einem Alt laufen lassen und währenddesse
 mit seinem Hauptaccount spielen!
 
 Um den Bot zu installieren, ladet ihr euch mit dem Knopf "Clone or Download" den
-ganzen Ordner herunter.Ladet euch das Paket als zip herunter. DAnn entpackt ihr
+ganzen Ordner herunter. Ladet euch das Paket als zip herunter. Dann entpackt ihr
 den Ordner "GrieferBOT - master" an eine beliebige Stelle, zum Beispiel auf den
-Desktop. Nun könnt ihr ihn auch schon Starten.
+Desktop. Nun könnt ihr ihn auch schon starten.
 
 Wenn ihr den Bot starten wollt, so habe ich seit Version GrieferBOT04 eine
 einfache Möglichkeit hinzugefügt. Im Ordner /NeuesteVersionAlsExe/dist/ gibt
 es eine Ausführbare Datei, die GrieferBOTXX heißt, wobei XX die aktuelle Ver-
 sion ist. Wenn ihr eine Sichere Version haben wollt, so geht in den Ordner
-/LastStableRelease/dist/ und führt dor Die Datei aus.
+/LastStableRelease/dist/ und führt dort die Datei aus.
 Einfach die Datei öffnen, als ob ihr eine andere Anwendung starten
 würdet, also Doppelklick. Nun öffnet sich ein Eingabefenster indem nun zuerst
 ein Copyright und ein Verweis auf die Lizenz zu sehen sind. Anschließend beginnt 
 das eigentliche Bot-Programm.
 
-Nun könnt ihr zuerst eingeben, ob ihr eine NAchricht an Leute schreiben wollt,
+Für den Fall, dass dies nicht funktioniert,  öffnet ihr die Datei in WinRaR und
+führt dort in der Ordnerstruktur die Datei aus. (geg. entpacken, etc.).
+Es kann auch sein, dass euer Anti-Viren Programm dafür sorgt, dass ihr die Datei
+zunächst nicht ausführen könnt. Wenn "Windows-Sicherheit" die Ausführung blockiert,
+dann geht auf "Mehr Infos" oder "Weitere Informationen" und könnt dort "Trotzdem
+ausführen auswählen. Sollten im Programmverlauf Probleme auftreten, so führt das
+Programm zunächst als Administrator aus, und wenn es dann immer noch nicht geht,
+so schreibt mir umgehend eine Nachricht auf GitHub, sodass ich den Fehler beheben
+kann (Bitte möglichst viele Infos mitbringen, z.B, wann gecrasht, etc...).
+
+Nun könnt ihr zuerst eingeben, ob ihr eine Nachricht an Leute schreiben wollt,
 die euch, während ihr afk seid, per msg anschreiben. Wenn ihr eine wollt, so
 gebt diese einfach ein, sie wird dann automatisch jedem geschickt, der euch
 etwas schreibt.
 
+#Ab SellingBot05
 Anschließend Wählt ihr aus welche Taste ihr zum Droppen von Items eingestellt habt.
 Im Moment werden nur die linke Shift-Taste und alle Buchstaben und Zahlen unter-
 stützt. Gebt ihr etwas anderes ein, kann ich nicht für eine Funktionalität garan-
 tieren. Um die linke Shift Taste auszuwählen, gebt ihr " LeftShift " ein.
+#Ende, ab hier wieder für 04
 
 Nun könnt ihr die Itemsorten auswählen die ihr verkaufen wollt. Dabei gibt es eine 
-Beschränkung von 9 Items die verkauftwerden können. Für jedes Item kann man 
+Beschränkung von 9 Items die verkauft werden können. Für jedes Item kann man 
 angeben, wieviele man verkauft, und wieviel ein Item kosten soll. Der Bot droppt
 immer einzeln, daher muss auch ein Einzelpreis angegeben werden.
 
-Die Items müssen in der Angegeben Reihenfolge  in die Hotbar gelegt werden. Wenn
+Die Items müssen in der angegeben Reihenfolge in die Hotbar gelegt werden. Wenn
 ihr nach z.B. 3 Items alles angegeben habt, was ihr verkaufen wollt, drückt ihr 
 einfach die Enter-Taste und wechselt in Minecraft. Nun wartet ihr bis die 
 Initialisierungsarbeiten abgeschlossen sind, und in der Eingabeaufforderung
 steht: " [+] Bereit für Kunden " oder so ähnlich. Dann könnt ihr afk gehen, müsst 
 aber Minecraft als primäres Fenster geöffnet lassen. Wenn ihr fertig verkauft habt,
-schließt einfach die Kommandozeile.
+oder nicht mehr afk seid, schließt einfach die Kommandozeile.
