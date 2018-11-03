@@ -1,0 +1,65 @@
+Ich bin nur ein Bot. DAs kann man selber einstellen.
+Das ist eine Nachricht :P Kann man selber einstellen.
+Initialisiere GrieferBOT | Bitte warten...
+
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+
+[+] Bestand zu Beginn des Durchlaufes
+{'Beacon': [[4, '1']], 'Drachenei': [[4, '2']]}
+{700: 'Beacon', 1600: 'Drachenei'}
+[+] Bereit für Kunden.
+[Griefer | saupi_Hd -> mir] Hallo ich will Beacon
+
+/msg saupi_Hd Das ist eine Nachricht :P Kann man selber einstellen.
+[o] [2018-09-09 14:37] Spieler: saupi_Hd | Betrag: $700
+Dropped Beacon
+/msg saupi_Hd Danke für ihren Einkauf!
+[o] [2018-09-09 14:37] Spieler: saupi_Hd | Betrag: $600
+/pay saupi_Hd 600.0
+/msg saupi_Hd Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!
+[o] [2018-09-09 14:38] Spieler: saupi_Hd | Betrag: $1,600
+Dropped Drachenei
+/msg saupi_Hd Danke für ihren Einkauf!
+[Griefer | KxmpfCookie -> mir] wurde dir geld gecleared?
+
+/msg KxmpfCookie Das ist eine Nachricht :P Kann man selber einstellen.
+[Griefer | KxmpfCookie -> mir] wurde dir geld gecleared?
+
+/msg KxmpfCookie Das ist eine Nachricht :P Kann man selber einstellen.
+[Griefer | KxmpfCookie -> mir] wurde dir geld gecleared?
+
+/msg KxmpfCookie Das ist eine Nachricht :P Kann man selber einstellen.
+[Griefer | KxmpfCookie -> mir] wurde dir geld gecleared?
+
+/msg KxmpfCookie Das ist eine Nachricht :P Kann man selber einstellen.
+Ich bin afk, bitte nicht spammen :)
+Bin afk, komme erst SEHR Spät wieder, pls no spam
+Initialisiere GrieferBOT | Bitte warten...
+
+Das sieht niemand... wenn doch, /msg LocutusV0nB0rg
+
+[+] Bestand zu Beginn des Durchlaufes
+{'Barriere': [[62, '1']], 'Witherkopf': [[24, '2']], 'RAhmen': [[15, '3']], 'Beacon': [[57, '4']], 'Spendenokular': [[50, '5']]}
+{2000: 'Barriere', 333: 'Witherkopf', 10000: 'RAhmen', 1001: 'Beacon', 1000: 'Spendenokular'}
+[+] Bereit für Kunden.
+[Spieler | iHxveLxgitAim -> mir] die Tür geht nicht zu
+
+/msg iHxveLxgitAim Bin afk, komme erst SEHR Spät wieder, pls no spam
+[Spieler | iHxveLxgitAim -> mir] die Tür geht nicht zu
+
+/msg iHxveLxgitAim Bin afk, komme erst SEHR Spät wieder, pls no spam
+[Spieler | BimAldiKassierer -> mir] he
+
+/msg BimAldiKassierer Bin afk, komme erst SEHR Spät wieder, pls no spam
+[Griefer | StylischerVincii -> mir] hey
+
+/msg StylischerVincii Bin afk, komme erst SEHR Spät wieder, pls no spam
+[Griefer | StylischerVincii -> mir] schade :C
+
+/msg StylischerVincii Bin afk, komme erst SEHR Spät wieder, pls no spam
+[Spieler | CusterHD -> mir] Hi
+
+/msg CusterHD Bin afk, komme erst SEHR Spät wieder, pls no spam
+[Spieler | CusterHD -> mir] Wieder da c:
+
+/msg CusterHD Bin afk, komme erst SEHR Spät wieder, pls no spam

@@ -1,0 +1,93 @@
+testmsg
+tesmsg
+testmsg
+nix
+[+] Bestand zu Beginn des Durchlaufes
+{'w': [[2, '1']]}
+{3: 'w'}
+[+] Bereit für Kunden.
+test
+[+] Bestand zu Beginn des Durchlaufes
+{'w': [[2, '1']]}
+{3: 'w'}
+[+] Bereit für Kunden.
+testmsg
+[+] Bestand zu Beginn des Durchlaufes
+{'w': [[2, '1']]}
+{3: 'w'}
+[+] Bereit für Kunden.
+[Spieler | Rakondom -> mir] Hi, Komm mal auf BauHelden,ga bekommst auch free Premi + wir suchen teammitglie
+
+testmsg
+[+] Bestand zu Beginn des Durchlaufes
+{'w': [[2, '1']]}
+{3: 'w'}
+[+] Bereit für Kunden.
+[Legende | MrsSchaf -> mir] .
+
+Danke für die msg, ist zum testen.
+[+] Bestand zu Beginn des Durchlaufes
+{'e': [[2, '1']]}
+{3: 'e'}
+[+] Bereit für Kunden.
+[Spieler | Rakondom -> mir] Hi, Komm mal auf BauHelden,ga bekommst auch free Premi + wir suchen teammitglie
+
+lol
+wr
+qwe
+wer
+wer
+123
+wer
+wer
+wer
+wer
+wer
+[+] Bestand zu Beginn des Durchlaufes
+{'w': [[2, '1']]}
+{3: 'w'}
+[+] Bereit für Kunden.
+wer
+[+] Bestand zu Beginn des Durchlaufes
+{'w': [[2, '1']]}
+{3: 'w'}
+[+] Bereit für Kunden.
+wer
+[+] Bestand zu Beginn des Durchlaufes
+{'2': [[3, '1']]}
+{5: '2'}
+[+] Bereit für Kunden.
+[Ultra | LittleBepo -> mir] bist du in der blockerinc?
+
+[Ultra | LittleBepo -> mir] ah;D
+
+Das ist die afk Nachricht.
+[+] Bestand zu Beginn des Durchlaufes
+{'stein': [[5, '1']]}
+{3: 'stein'}
+[+] Bereit für Kunden.
+[o] [2018-09-06 10:10] Spieler: Albino_Schlumpf | Betrag: $3
+Afk Nachricht
+[+] Bestand zu Beginn des Durchlaufes
+{'Stein': [[55, '1']]}
+{3: 'Stein'}
+[+] Bereit für Kunden.
+[Spieler | pugglepups148 -> mir] Moin, wusstest du das AdminEvil ein Server hat? Die IP: AdminEvil . cf
+
+[Legende | JuzTim -> mir] hey
+
+Das ist eine Dev-Nachricht
+[+] Bestand zu Beginn des Durchlaufes
+{'Stein': [[55, '1']]}
+{3: 'Stein'}
+[+] Bereit für Kunden.
+[Spieler | Albino_Schlumpf -> mir] test 1 2 3
+
+[Spieler | Albino_Schlumpf -> mir] test 1 2 3
+
+[Legende | JuzTim -> mir] hast du discord
+
+[Legende | JuzTim -> mir] xd
+
+[Legende | JuzTim -> mir] ts
+
