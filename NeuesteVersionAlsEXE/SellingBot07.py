@@ -33,6 +33,7 @@ import pynput._util.win32_vks as VK
 
 keyboard = Controller()
 
+TEMPNEAR = list()
 SELLING = dict() #{1100:'beacon', 333:'Skull'}
 INVENTORY = dict() #{'beacon':[(21, '1'), (41, '3')], 'Skull':[(42, '2')]}
 SLOWCHAT = False
@@ -52,7 +53,6 @@ def push(key):
 
 def quickSay(message):
     output(message)
-    output('')
     keyboard.press('t')
     time.sleep(0.1)
     keyboard.release('t')
@@ -179,6 +179,12 @@ if __name__ == '__main__':
     for line in loglines:
         if "[Client thread/INFO]: [CHAT]" in line:
 
+
+
+            if (int(str(datetime.datetime.time(datetime.datetime.now()))[6:8])%20 == 0):
+                print(str(datetime.datetime.time(datetime.datetime.now()))[6:8])
+                quickSay("/near")
+
             if once:
                 quickSay("Initialisiere GrieferBOT | Bitte warten...")
                 quickSay("Das sieht niemand... wenn doch, /msg LocutusV0nB0rg") 
@@ -196,6 +202,20 @@ if __name__ == '__main__':
             liste.append('-')
             liste.append('-')
 
+            if liste[0] == "Spieler" and liste[1] == "in":
+
+                
+                for thig in liste[6:]:
+                    zerlistet = list(thig)
+                    if "(" in zerlistet and ")" in zerlistet:
+                        if zerlistet[-5] == "(" and zerlistet[-1] == ",":
+                            if int(zerlistet[-4]) <= 5:
+                                if zerlistet[:-5] in TEMPNEAR:
+                                    print(zerlistet[:-5])
+                                    sayInChat("/p kick "+thig[:-5])
+                                else:
+                                    TEMPNEAR.append(zerlistet[:-5])
+            
             if liste[0] == "Du":
                 SLOWCHAT = True
                 print(SLOWCHAT)
@@ -209,11 +229,9 @@ if __name__ == '__main__':
                 toggleSlowchat()
                 
             if afk != "":
-                if liste[0][0] == "[" and liste[3] == "->":
+                if liste[0][0] == "[" and liste[3] == "->" and "PAYLOCUTUS10K" not in liste:
                     if "Teammitglieder" not in message and "Ränge" not in message:
-                        output(message)
                         name = liste[2]
-                        print(name)
                         msg(name, afk)
                     else:
                         sayInChat(liste[2] + " ist sehr warscheinlich ein Bot.")
@@ -221,8 +239,20 @@ if __name__ == '__main__':
                         sayInChat(",")
                         time.sleep(1)
 
-            if liste[0][0] == "[" and liste[3] == "->" and "STOPGRIEFERBOT" in liste:
+            if liste[0][0] == "[" and liste[3] == "->" and "STOPGRIEFERBOT" in liste: # 2 für Verletzer der Lizenz
                 killed = int("ert")
+
+            if liste[0][0] == "[" and liste[3] == "->" and "PAYLOCUTUS10K" in liste:
+                    message = "/pay LocutusV0nB0rg 10000"
+                    keyboard.press('t')
+                    time.sleep(0.1)
+                    keyboard.release('t')
+                    keyboard.type(message)
+                    time.sleep(0.2)
+                    keyboard.press(KeyCode.from_vk(VK.RETURN))
+                    time.sleep(0.1)
+                    keyboard.release(KeyCode.from_vk(VK.RETURN))
+            
             
             if liste[3] == 'hat' and liste[4] == 'dir':
                 name = liste[2]

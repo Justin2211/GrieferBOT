@@ -1,6 +1,6 @@
-(['C:\\Daten\\Python\\GrieferBOT\\FixFürBoo\\SellingBot06.py'],
- ['C:\\Daten\\Python\\GrieferBOT\\FixFürBoo',
-  'C:\\Daten\\Python\\GrieferBOT\\FixFürBoo'],
+(['C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\SellingBot07.py'],
+ ['C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE',
+  'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE'],
  ['codecs'],
  [],
  [],
@@ -8,36 +8,28 @@
  False,
  False,
  '3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)]',
- [('SellingBot06',
-   'C:\\Daten\\Python\\GrieferBOT\\FixFürBoo\\SellingBot06.py',
+ [('SellingBot07',
+   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\SellingBot07.py',
    'PYSOURCE')],
- [('_strptime',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\_strptime.py',
-   'PYMODULE'),
-  ('ntpath',
+ [('ntpath',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\ntpath.py',
+   'PYMODULE'),
+  ('_strptime',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\_strptime.py',
    'PYMODULE'),
   ('stringprep',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\stringprep.py',
    'PYMODULE'),
-  ('stat',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\stat.py',
-   'PYMODULE'),
-  ('genericpath',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\genericpath.py',
-   'PYMODULE'),
-  ('posixpath',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\posixpath.py',
-   'PYMODULE'),
   ('fnmatch',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\fnmatch.py',
+   'PYMODULE'),
+  ('struct',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\struct.py',
    'PYMODULE'),
   ('_compat_pickle',
    'c:\\program files (x86)\\microsoft visual '
@@ -194,6 +186,14 @@
   ('platform',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\platform.py',
+   'PYMODULE'),
+  ('token',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\tokenize.py',
    'PYMODULE'),
   ('urllib.parse',
    'c:\\program files (x86)\\microsoft visual '
@@ -467,21 +467,21 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\doctest.py',
    'PYMODULE'),
-  ('pprint',
+  ('copy',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\pprint.py',
+   'studio\\shared\\python36_64\\lib\\copy.py',
    'PYMODULE'),
-  ('pickle',
+  ('stat',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\pickle.py',
+   'studio\\shared\\python36_64\\lib\\stat.py',
    'PYMODULE'),
-  ('tracemalloc',
+  ('genericpath',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\tracemalloc.py',
+   'studio\\shared\\python36_64\\lib\\genericpath.py',
    'PYMODULE'),
-  ('warnings',
+  ('posixpath',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\warnings.py',
+   'studio\\shared\\python36_64\\lib\\posixpath.py',
    'PYMODULE'),
   ('enum',
    'c:\\program files (x86)\\microsoft visual '
@@ -519,21 +519,9 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\subprocess.py',
    'PYMODULE'),
-  ('token',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\token.py',
-   'PYMODULE'),
-  ('copy',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\copy.py',
-   'PYMODULE'),
   ('textwrap',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\textwrap.py',
-   'PYMODULE'),
-  ('struct',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\struct.py',
    'PYMODULE'),
   ('gettext',
    'c:\\program files (x86)\\microsoft visual '
@@ -543,9 +531,21 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\argparse.py',
    'PYMODULE'),
-  ('tokenize',
+  ('pprint',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\tokenize.py',
+   'studio\\shared\\python36_64\\lib\\pprint.py',
+   'PYMODULE'),
+  ('pickle',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\pickle.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('warnings',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\warnings.py',
    'PYMODULE'),
   ('pynput._util.win32_vks',
    'c:\\program files (x86)\\microsoft visual '
@@ -710,6 +710,6 @@
  [],
  [],
  [('base_library.zip',
-   'C:\\Daten\\Python\\GrieferBOT\\FixFürBoo\\build\\SellingBot06\\base_library.zip',
+   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot07\\base_library.zip',
    'DATA')],
  [])
