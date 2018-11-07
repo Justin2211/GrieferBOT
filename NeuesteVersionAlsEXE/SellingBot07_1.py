@@ -181,7 +181,7 @@ if __name__ == '__main__':
 
 
 
-            if (int(str(datetime.datetime.time(datetime.datetime.now()))[6:8])%20 == 0):
+            if (int(str(datetime.datetime.time(datetime.datetime.now()))[6:8])%59 == 0):
                 print(str(datetime.datetime.time(datetime.datetime.now()))[6:8])
                 quickSay("/near")
 

@@ -1,8 +1,8 @@
-([('SellingBot07.exe',
-   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot07\\SellingBot07.exe',
+([('SellingBot07_1.exe',
+   'c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot07_1\\SellingBot07_1.exe',
    'EXECUTABLE'),
-  ('SellingBot07.exe.manifest',
-   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot07\\SellingBot07.exe.manifest',
+  ('SellingBot07_1.exe.manifest',
+   'c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot07_1\\SellingBot07_1.exe.manifest',
    'BINARY'),
   ('VCRUNTIME140.dll',
    'c:\\program files (x86)\\microsoft visual '
@@ -49,5 +49,5 @@
    'studio\\shared\\python36_64\\DLLs\\_ctypes.pyd',
    'EXTENSION'),
   ('base_library.zip',
-   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot07\\base_library.zip',
+   'c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot07_1\\base_library.zip',
    'DATA')],)
