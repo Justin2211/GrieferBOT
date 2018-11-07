@@ -1,9 +1,7 @@
 #GrieferBOT
 
-Leider muss ih euch mitteilen, dass sich die Entwicklung in der nächsten Zeit
-aus pivaten Gründen zeitlich Verzögern wird. Bitte zögert nicht Ticktets zu
-schreiben und den Bot weiter zu benutzen! Seid aber sicher, dasss ihr das Last
-Stable release benutzt aufgrund eines Bugs, der es möglich gemacht hat
+Bitte zögert nicht Ticktets zuschrei ben und den Bot zu benutzen! Seid aber sicher, dasss ihr immer
+die neueste Version benutzt aufgrund eines Bugs, der es möglich gemacht hat
 den Bot zu beklauen.
 
 Ein Einfaches Botprogramm um zunächst den automatisierten Verkauf von Item zu
