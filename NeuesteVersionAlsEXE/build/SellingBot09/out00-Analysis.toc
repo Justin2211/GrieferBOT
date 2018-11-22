@@ -1,6 +1,6 @@
-(['c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\SellingBot07_1.py'],
- ['c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE',
-  'c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE'],
+(['C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\SellingBot09.py'],
+ ['C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE',
+  'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE'],
  ['codecs'],
  [],
  [],
@@ -8,8 +8,8 @@
  False,
  False,
  '3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)]',
- [('SellingBot07_1',
-   'c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\SellingBot07_1.py',
+ [('SellingBot09',
+   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\SellingBot09.py',
    'PYSOURCE')],
  [('ntpath',
    'c:\\program files (x86)\\microsoft visual '
@@ -22,18 +22,6 @@
   ('stringprep',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\stringprep.py',
-   'PYMODULE'),
-  ('stat',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\stat.py',
-   'PYMODULE'),
-  ('genericpath',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\genericpath.py',
-   'PYMODULE'),
-  ('posixpath',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\posixpath.py',
    'PYMODULE'),
   ('fnmatch',
    'c:\\program files (x86)\\microsoft visual '
@@ -479,6 +467,54 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\doctest.py',
    'PYMODULE'),
+  ('copy',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\copy.py',
+   'PYMODULE'),
+  ('stat',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\stat.py',
+   'PYMODULE'),
+  ('genericpath',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\genericpath.py',
+   'PYMODULE'),
+  ('posixpath',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\posixpath.py',
+   'PYMODULE'),
+  ('enum',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\enum.py',
+   'PYMODULE'),
+  ('signal',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\signal.py',
+   'PYMODULE'),
+  ('contextlib',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('threading',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\threading.py',
+   'PYMODULE'),
+  ('selectors',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\selectors.py',
+   'PYMODULE'),
+  ('dummy_threading',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\dummy_threading.py',
+   'PYMODULE'),
+  ('subprocess',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\subprocess.py',
+   'PYMODULE'),
   ('textwrap',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\textwrap.py',
@@ -507,45 +543,9 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\warnings.py',
    'PYMODULE'),
-  ('enum',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\enum.py',
-   'PYMODULE'),
-  ('signal',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\signal.py',
-   'PYMODULE'),
-  ('contextlib',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\contextlib.py',
-   'PYMODULE'),
-  ('_threading_local',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\_threading_local.py',
-   'PYMODULE'),
-  ('threading',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\threading.py',
-   'PYMODULE'),
-  ('selectors',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\selectors.py',
-   'PYMODULE'),
   ('_dummy_thread',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\_dummy_thread.py',
-   'PYMODULE'),
-  ('dummy_threading',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\dummy_threading.py',
-   'PYMODULE'),
-  ('subprocess',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\subprocess.py',
-   'PYMODULE'),
-  ('copy',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\copy.py',
    'PYMODULE'),
   ('pynput._util.win32_vks',
    'c:\\program files (x86)\\microsoft visual '
@@ -663,13 +663,13 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\os.py',
    'PYMODULE')],
- [('VCRUNTIME140.dll',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\VCRUNTIME140.dll',
-   'BINARY'),
-  ('python36.dll',
+ [('python36.dll',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\python36.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\VCRUNTIME140.dll',
    'BINARY'),
   ('_ssl',
    'c:\\program files (x86)\\microsoft visual '
@@ -710,6 +710,6 @@
  [],
  [],
  [('base_library.zip',
-   'c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot07_1\\base_library.zip',
+   'C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot09\\base_library.zip',
    'DATA')],
  [])

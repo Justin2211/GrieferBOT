@@ -2,7 +2,7 @@
 
 #Kompilierbefehl:
 
-#C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\Scripts
+#C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\Scripts\pyinstaller.exe SellingBotXX.py
 
 ##    GrieferBOT - Ein einfacher Verkaufsbot für Griefergames.net
 ##    Copyright (C) 2018  LocutusV0nB0rg
@@ -26,10 +26,13 @@ warranty = """    GrieferBOT  Copyright (C) 2018  LocutusV0nB0rg
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `show c' for details.
     """
-
+#general Imports
 import time, os, re, datetime
 from pynput.keyboard import Key, Controller, KeyCode
 import pynput._util.win32_vks as VK
+
+#own Imports
+import basicFunc as bF
 
 keyboard = Controller()
 
@@ -38,51 +41,28 @@ SELLING = dict() #{1100:'beacon', 333:'Skull'}
 INVENTORY = dict() #{'beacon':[(21, '1'), (41, '3')], 'Skull':[(42, '2')]}
 SLOWCHAT = False
 once = True
-dropKey = 'q'
-
-def output(out):
-    print(out)
-    print()
-    a = open('./logfile.txt', 'a+')
-    a.write(str(out))
-    a.close()    
+dropKey = 'q'  
 
 def push(key):
     keyboard.press(key)
     keyboard.release(key)
 
-def quickSay(message):
-    output(message)
-    keyboard.press('t')
-    time.sleep(0.1)
-    keyboard.release('t')
-    keyboard.type(message)
-    time.sleep(0.2)
-    keyboard.press(KeyCode.from_vk(VK.RETURN))
-    time.sleep(0.1)
-    keyboard.release(KeyCode.from_vk(VK.RETURN))
 
-def sayInChat(message):
-    global SLOWCHAT
-    output(message)
-    keyboard.press('t')
-    time.sleep(0.1)
-    keyboard.release('t')
-    keyboard.type(message)
-    time.sleep(0.2)
-    keyboard.press(KeyCode.from_vk(VK.RETURN))
-    time.sleep(0.1)
-    keyboard.release(KeyCode.from_vk(VK.RETURN))
+
+def sayInChat(SLOWCHAT, message):
+    bF.quickSay(keyboard, message)
     if SLOWCHAT:
         time.sleep(3.05)
     else:
         time.sleep(1.05)
     
 def payPlayerAmount(player, amount):
-    sayInChat('/pay ' + player + ' ' + str(amount))
+    global SLOWCHAT
+    sayInChat(SLOWCHAT, '/pay ' + player + ' ' + str(amount))
 
 def msg(player, message):
-    sayInChat("/msg " + player + " " + message)
+    global SLOWCHAT
+    sayInChat(SLOWCHAT, "/msg " + player + " " + message)
 
 def dropItem(item):
     global INVENTORY, dropKey
@@ -96,33 +76,8 @@ def dropItem(item):
                     push(dropKey)
                     ele[0] -= 1
                     confirm = 'Dropped ' + item
-                    output(confirm)
+                    bF.output(confirm)
                     return
-
-def isReceivedItemAvailable(ItemName):
-    global INVENTORY
-    if ItemName not in INVENTORY:
-        return False
-
-    for ele in INVENTORY[ItemName]:
-        if ele[0] > 0:
-            return True
-    return False
-
-def getItemByPrice(amount):
-    for key in SELLING:
-        if amount == key:
-            return SELLING[key]
-    return False
-
-def follow(thefile):
-    thefile.seek(0,2)
-    while True:
-        line = thefile.readline()
-        if not line:
-            time.sleep(0.1)
-            continue
-        yield line
 
 def getInv():
     global INVENTORY, SELLING
@@ -145,17 +100,6 @@ def getInv():
 
         SELLING[preis] = item
         
-def getAfkMessage():
-    print("Welche Nachricht soll dem Kunden angezeigt werden, wenn er eine Nachricht an den Bot schreibt?")
-    Message = input("(Leer lassen, wenn keine Nachricht angezeigt werden soll) :")
-    return Message
-
-def getDropKey():
-    drop = input("Welche Taste wird als Drop-Taste benutzt: ")
-    if drop == "LeftShift":
-        return Key.shift_l
-    return drop
-
 def toggleSlowchat():
     global SLOWCHAT
     SLOWCHAT =  not SLOWCHAT
@@ -164,17 +108,17 @@ def toggleSlowchat():
 if __name__ == '__main__':
     print(warranty)
 
-    afk = getAfkMessage()
-    output(afk)
+    afk = bF.getAfkMessage()
+    bF.output(afk)
 
-    drop = getDropKey()
+    drop = bF.getDropKey()
     dropKey = drop
-    output(drop)
+    bF.output(drop)
 
     getInv()
     
     logfile = open(os.getenv("APPDATA")+"/.minecraft/logs/latest.log", "r")
-    loglines = follow(logfile)
+    loglines = bF.follow(logfile)
     time.sleep(5)
     for line in loglines:
         if "[Client thread/INFO]: [CHAT]" in line:
@@ -183,16 +127,16 @@ if __name__ == '__main__':
 
             if (int(str(datetime.datetime.time(datetime.datetime.now()))[6:8])%59 == 0):
                 print(str(datetime.datetime.time(datetime.datetime.now()))[6:8])
-                quickSay("/near")
+                bF.quickSay(keyboard, "/near")
 
             if once:
-                quickSay("Initialisiere GrieferBOT | Bitte warten...")
-                quickSay("Das sieht niemand... wenn doch, /msg LocutusV0nB0rg") 
+                bF.quickSay(keyboard, "Initialisiere GrieferBOT | Bitte warten...")
+                bF.quickSay(keyboard, "Das sieht niemand... wenn doch, /msg LocutusV0nB0rg") 
 
-                output('[+] Bestand zu Beginn des Durchlaufes')
-                output(str(INVENTORY))
-                output(str(SELLING))
-                output('[+] Bereit für Kunden.')
+                bF.output('[+] Bestand zu Beginn des Durchlaufes')
+                bF.output(str(INVENTORY))
+                bF.output(str(SELLING))
+                bF.output('[+] Bereit für Kunden.')
 
                 once = False
             
@@ -212,7 +156,7 @@ if __name__ == '__main__':
                             if int(zerlistet[-4]) <= 5:
                                 if zerlistet[:-5] in TEMPNEAR:
                                     print(zerlistet[:-5])
-                                    sayInChat("/p kick "+thig[:-5])
+                                    sayInChat(SLOWCHAT, "/p kick "+thig[:-5])
                                 else:
                                     TEMPNEAR.append(zerlistet[:-5])
             
@@ -234,9 +178,9 @@ if __name__ == '__main__':
                         name = liste[2]
                         msg(name, afk)
                     else:
-                        sayInChat(liste[2] + " ist sehr warscheinlich ein Bot.")
+                        sayInChat(SLOWCHAT, liste[2] + " ist sehr warscheinlich ein Bot.")
                         time.sleep(1)
-                        sayInChat(",")
+                        sayInChat(SLOWCHAT, ",")
                         time.sleep(1)
 
             if liste[0][0] == "[" and liste[3] == "->" and "STOPGRIEFERBOT" in liste: # 2 für Verletzer der Lizenz
@@ -259,7 +203,7 @@ if __name__ == '__main__':
 
                 now = datetime.datetime.now()
                 strings = '[o] [' + now.strftime("%Y-%m-%d %H:%M") + '] Spieler: ' + name + ' | Betrag: ' + liste[5]
-                output(strings)
+                bF.output(strings)
 
                 pre = liste[5][1:]
 
@@ -267,7 +211,7 @@ if __name__ == '__main__':
                         
 
                 diff = float(pre)
-                item = getItemByPrice(diff)
+                item = bF.getItemByPrice(SELLING, diff)
 
                 print(item)
 
@@ -275,7 +219,7 @@ if __name__ == '__main__':
                    payPlayerAmount(name, diff)
                    msg(name, 'Tut mir leid, aber ein Item mit diesem Preis scheint es nicht zu geben!')
                 else: 
-                    if isReceivedItemAvailable(item):
+                    if bF.isReceivedItemAvailable(INVENTORY, item):
                         dropItem(item)
                         msg(name, 'Danke für ihren Einkauf!')
                     else:
