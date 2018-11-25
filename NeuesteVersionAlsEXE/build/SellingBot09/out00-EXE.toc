@@ -41,7 +41,7 @@
  [],
  False,
  False,
- 1543147775,
+ 1543148614,
  [('run.exe',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
