@@ -1,23 +1,31 @@
-('C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot09\\out00-PYZ.pyz',
- [('ntpath',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\ntpath.py',
-   'PYMODULE'),
-  ('_strptime',
+('c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE\\build\\SellingBot09\\out00-PYZ.pyz',
+ [('_strptime',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\_strptime.py',
+   'PYMODULE'),
+  ('ntpath',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\ntpath.py',
    'PYMODULE'),
   ('stringprep',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\stringprep.py',
    'PYMODULE'),
+  ('stat',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\stat.py',
+   'PYMODULE'),
+  ('genericpath',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\genericpath.py',
+   'PYMODULE'),
+  ('posixpath',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\posixpath.py',
+   'PYMODULE'),
   ('fnmatch',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\fnmatch.py',
-   'PYMODULE'),
-  ('struct',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\struct.py',
    'PYMODULE'),
   ('_compat_pickle',
    'c:\\program files (x86)\\microsoft visual '
@@ -247,10 +255,6 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\uu.py',
    'PYMODULE'),
-  ('quopri',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\quopri.py',
-   'PYMODULE'),
   ('email.feedparser',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\email\\feedparser.py',
@@ -399,10 +403,6 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\pydoc.py',
    'PYMODULE'),
-  ('getopt',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\getopt.py',
-   'PYMODULE'),
   ('pdb',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\pdb.py',
@@ -455,21 +455,29 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\doctest.py',
    'PYMODULE'),
-  ('copy',
+  ('textwrap',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\copy.py',
+   'studio\\shared\\python36_64\\lib\\textwrap.py',
    'PYMODULE'),
-  ('stat',
+  ('argparse',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\stat.py',
+   'studio\\shared\\python36_64\\lib\\argparse.py',
    'PYMODULE'),
-  ('genericpath',
+  ('pprint',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\genericpath.py',
+   'studio\\shared\\python36_64\\lib\\pprint.py',
    'PYMODULE'),
-  ('posixpath',
+  ('pickle',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\posixpath.py',
+   'studio\\shared\\python36_64\\lib\\pickle.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('warnings',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\warnings.py',
    'PYMODULE'),
   ('enum',
    'c:\\program files (x86)\\microsoft visual '
@@ -495,6 +503,10 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\selectors.py',
    'PYMODULE'),
+  ('_dummy_thread',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\_dummy_thread.py',
+   'PYMODULE'),
   ('dummy_threading',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\dummy_threading.py',
@@ -503,37 +515,25 @@
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\subprocess.py',
    'PYMODULE'),
-  ('textwrap',
+  ('struct',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\textwrap.py',
+   'studio\\shared\\python36_64\\lib\\struct.py',
    'PYMODULE'),
   ('gettext',
    'c:\\program files (x86)\\microsoft visual '
    'studio\\shared\\python36_64\\lib\\gettext.py',
    'PYMODULE'),
-  ('argparse',
+  ('getopt',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\argparse.py',
+   'studio\\shared\\python36_64\\lib\\getopt.py',
    'PYMODULE'),
-  ('pprint',
+  ('quopri',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\pprint.py',
+   'studio\\shared\\python36_64\\lib\\quopri.py',
    'PYMODULE'),
-  ('pickle',
+  ('copy',
    'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\pickle.py',
-   'PYMODULE'),
-  ('tracemalloc',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\tracemalloc.py',
-   'PYMODULE'),
-  ('warnings',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\warnings.py',
-   'PYMODULE'),
-  ('_dummy_thread',
-   'c:\\program files (x86)\\microsoft visual '
-   'studio\\shared\\python36_64\\lib\\_dummy_thread.py',
+   'studio\\shared\\python36_64\\lib\\copy.py',
    'PYMODULE'),
   ('pynput._util.win32_vks',
    'c:\\program files (x86)\\microsoft visual '

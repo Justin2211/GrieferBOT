@@ -232,6 +232,7 @@ if __name__ == '__main__':
             if liste[0] == "Kontostand:":
                 print(liste)
                 geldstring = liste[1]
+                geldstring = re.sub(',', '', geldstring)
                 KONTOSTAND = int(geldstring[1:-1])
 
                 if zahlvorgang:

@@ -1,20 +1,20 @@
-missing module named resource - imported by posix, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named posix - imported by os, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named _posixsubprocess - imported by subprocess, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named 'org.python' - imported by pickle, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py, xml.sax
-missing module named readline - imported by cmd, code, pdb, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-excluded module named _frozen_importlib - imported by importlib, importlib.abc, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named _winreg - imported by platform, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named resource - imported by posix, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named posix - imported by os, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named _posixsubprocess - imported by subprocess, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named org - imported by pickle, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named readline - imported by cmd, code, pdb, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named _winreg - imported by platform, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
 missing module named _scproxy - imported by urllib.request
-missing module named java - imported by platform, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named 'java.lang' - imported by platform, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py, xml.sax._exceptions
-missing module named vms_lib - imported by platform, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named termios - imported by tty, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py, getpass
-missing module named grp - imported by shutil, tarfile, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named org - imported by copy, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
-missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py, netrc, getpass
-missing module named _dummy_threading - imported by dummy_threading, C:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named java - imported by platform, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named 'java.lang' - imported by platform, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named termios - imported by tty, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py, getpass
+missing module named grp - imported by shutil, tarfile, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py, netrc, getpass
+missing module named _dummy_threading - imported by dummy_threading, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py
+missing module named 'org.python' - imported by copy, c:\Daten\Python\GrieferBOT\NeuesteVersionAlsEXE\SellingBot09.py, xml.sax
 missing module named 'Xlib.XK' - imported by pynput.keyboard._xorg, pynput._util.xorg
 missing module named 'Xlib.threaded' - imported by pynput._util.xorg
 missing module named 'Xlib.protocol' - imported by pynput.keyboard._xorg, pynput.mouse._xorg

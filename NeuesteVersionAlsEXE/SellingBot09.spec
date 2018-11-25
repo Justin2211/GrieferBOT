@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['SellingBot09.py'],
-             pathex=['C:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE'],
+             pathex=['c:\\Daten\\Python\\GrieferBOT\\NeuesteVersionAlsEXE'],
              binaries=[],
              datas=[],
              hiddenimports=[],
