@@ -232,8 +232,10 @@ if __name__ == '__main__':
             if liste[0] == "Kontostand:":
                 print(liste)
                 geldstring = liste[1]
-                geldstring = re.sub(',', '', geldstring)
-                KONTOSTAND = int(geldstring[1:-1])
+                preKONTOSTAND = re.sub(',', '', geldstring[1:-1])
+                if preKONTOSTAND[-3]=='.':
+                    preKONTOSTAND = preKONTOSTAND[:-3]
+                KONTOSTAND = int(preKONTOSTAND)
 
                 if zahlvorgang:
                     if SOLLKONTO == KONTOSTAND:
@@ -248,6 +250,7 @@ if __name__ == '__main__':
                         pre = templiste[5][1:]
 
                         pre = re.sub(',', '', pre)
+
 
                         diff = float(pre)
                         
@@ -264,7 +267,9 @@ if __name__ == '__main__':
                                 msg(name, 'Danke für ihren Einkauf!')
                             else:
                                 payPlayerAmount(name, diff)
-                                msg(name, 'Dieses Item ist leider ausverkauft. Hier hast du dein Money wieder!')                            
+                                msg(name, 'Dieses Item ist leider ausverkauft. Hier hast du dein Money wieder!')
+
+                        
 
                 zahlvorgang = False
                 SOLLKONTO = KONTOSTAND
